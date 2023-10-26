@@ -1,0 +1,94 @@
+:root {
+  --main-purple: #506ccf;
+  --main-dark-purple: #3453c2;
+  --main-white: #ffffff;
+  --main-blue: #49a1f1;
+
+  --text-black: #08123a;
+  --text-dark-grey: #5f6b77;
+  --text-light-grey: #e9eaf0;
+  --text-blue-grey: #8b9fcc;
+
+  --background-1: #ecf2fe;
+  --background-2: #f5f9ff;
+  --background-3: #e9f4f5;
+  --background-4: #fde9e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Text Regular', 'Arial', sans-serif;
+  line-height: 22px;
+  font-size: 16px;
+  color: var(--text-black);
+}
+
+h1 {
+  font-family: 'SF Pro Display Semibold';
+  line-height: 58px;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'SF Pro Display Medium', 'Arial', sans-serif;
+  line-height: 48px;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'SF Pro Text Medium', 'Arial', sans-serif;
+  line-height: 22px;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: 'SF Pro Text Regular', 'Arial', sans-serif;
+  line-height: 22px;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: 'SF Pro Text Medium', 'Arial', sans-serif;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+button {
+  font-family: 'SF Pro Text Medium', 'Arial', sans-serif;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+label {
+  font-family: 'SF Pro Text Medium', 'Arial', sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+body {
+  position: relative;
+  max-width: 1440px;
+  height: 800px;
+  background-color: var(--main-white);
+  border: 2px solid black;
+}
+
+.layout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    var(--main-purple) 0%,
+    var(--main-dark-purple) 100%
+  );
+  width: 31.8%;
+  height: 100%;
+  z-index: 2;
+}
+
+.content {
+  height: 430px;
+  width: 500px; /*!!!!!!!!!!!!*/
+}
