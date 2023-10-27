@@ -50,13 +50,16 @@ div.popup {
   color: var(--text-black);
 }
 
-.popup .section, div.call-wrapper, div.social-media {
+.popup .section,
+div.call-wrapper,
+div.social-media {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   row-gap: 10px;
 }
-div.section.communication, div.social-media {
+div.section.communication,
+div.social-media {
   flex-direction: row;
 }
 
@@ -93,5 +96,30 @@ button.media {
   border: 1px solid var(--text-light-grey);
   &:hover {
     background-color: var(--text-light-grey);
+  }
+}
+
+@media all and (width < 600px) {
+  div.popup {
+    width: 80%;
+    height: max-content;
+    left: 10%;
+  }
+  .popup section, div.section {
+    align-items: center;
+  }
+  .popup section {
+    height: 460px;
+    margin-bottom: 10px;
+  }
+  div.section.communication {
+    flex-direction: column;
+  }
+  span, p, a {
+    font-size: 14px;
+  }
+  button.call {
+    width: max-content;
+    height: max-content;
   }
 }
