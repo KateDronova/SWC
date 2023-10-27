@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/popup.css">
   <link rel="stylesheet" href="./styles/animations.css">
-  <link href="https://db.onlinewebfonts.com/c/1c45e28f 8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular"
+  <link href="https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular"
     rel="stylesheet" type="text/css" />
   <link href="https://db.onlinewebfonts.com/c/1bd3de6fcdd9ba7750e5a353dc6ef6e3?family=SF+Pro+Text+Medium"
     rel="stylesheet" type="text/css" />
@@ -48,7 +48,7 @@
       </p>
       <button class="dark-button">Подключиться</button>
     </section>
-    <button class="arrow">
+    <button class="transparent">
       <img class="arrow" src="./assets/icons/arrow.svg" alt="arrow">
     </button>
     <svg class="tech-support-svg">
@@ -78,32 +78,36 @@
 
   <div class="popup hidden">
     <h3>Контактная информация</h3>
+    <section>
+      <div class="section">
+        <div class="icon-text"><img src="./assets/icons/location-mark.svg" alt="clock"><span>&thinsp;Наш офис</span></div>
+        <p class="main-info">Санкт-Петербург, ул. Такая-то, д. 1</p>
+        <a href="#">Показать на карте</a>
+      </div>
 
-    <section>
-      <img src="./assets/icons/location-mark.svg" alt="clock">
-      <p>Наш офис</p>
-      <p>Санкт-Петербург, ул. Такая-то, д. 1</p>
-      <a href="#">Показать на карте</a>
+      <div class="section communication">
+        <div class="call-wrapper">
+          <p>Звоните:&ensp;<span class="contact-info">+7 (495) 123-45-67</span></p>
+          <p>Пишите:&ensp;<span class="contact-info">info@test.ru</span></p>
+        </div>
+        <button class="call">Заказать звонок</button>
+      </div>
+
+      <div class="section">
+        <div class="icon-text"><img src="./assets/icons/clock.svg" alt="clock"><span>&thinsp; Режим работы:</span></div>
+        <p class="main-info">Пн-Пт — с 10:00 до 18:00<br> Сб-Вс — выходной</p>
+      </div>
+
+      <div class="section">
+        <p>Мы в соцсетях</p>
+        <div class="social-media">
+          <button class="media"><img class="icon" src="./assets/icons/telegram.svg" alt="telegram"></button>
+          <button class="media"><img class="icon" src="./assets/icons/VK.svg" alt="VK"></button>
+          <button class="media"><img class="icon" src="./assets/icons/yandex-dzen.svg" alt="yandex_dzen"></button>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <p>Звоните: +7 (495) 123-45-67</p>
-      <p>Пишите: info@test.ru</p>
-      <button>Заказать звонок</button>
-    </section>
-    
-    <section>
-      <img src="./assets/icons/clock.svg" alt="clock">
-      <p>Режим работы:</p>
-      <p>Пн-Пт — с 10:00 до 18:00 Сб-Вс — выходной</p>
-    </section>
-    
-    <section>
-      <p>Мы в соцсетях</p>
-      <button><img src="./assets/icons/telegram.svg" alt="telegram"></button>
-      <button><img src="./assets/icons/VK.svg" alt="VK"></button>
-      <button><img src="./assets/icons/yandex-dzen.svg" alt="yandex_dzen"></button>
-    </section>
   </div>
   <script src="./script.js"></script>
 </body>

@@ -20,8 +20,11 @@
   margin: 0;
   padding: 0;
   font-family: 'SF Pro Text Regular', 'Arial', sans-serif;
-  line-height: 22px;
   font-size: 16px;
+  line-height: 20px;
+}
+
+p, span {
   color: var(--text-dark-grey);
 }
 
@@ -42,6 +45,8 @@ h3 {
   font-family: 'SF Pro Text Medium', 'Arial', sans-serif;
   line-height: 28px;
   font-size: 20px;
+  color: var(--text-black);
+  text-align: center;
 }
 
 h4 {
@@ -61,7 +66,7 @@ h5 {
   font-size: 20px;
 }
 
-div a {
+header a {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -97,6 +102,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 130px;
+  margin-bottom: 45px;
   height: 430px;
   width: 571px; /*!!!!!!!!!!!!*/
 }
@@ -108,6 +114,7 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 10px;
+  padding: 11px 14px;
   &:hover {
     cursor: pointer;
   }
@@ -116,7 +123,7 @@ button {
 button.dark-button {
   width: 170px;
   height: 54px;
-  padding: 15px 14px;
+  /* padding: 15px 14px; */
   background-color: var(--main-purple);
   text-align: center;
   box-shadow: 0px 20px 35px #DFE8F4;
@@ -128,27 +135,26 @@ button.dark-button {
 button.light-button {
   width: 127px;
   height: 46px;
-  padding: 11px 14px;
+  /* padding: 11px 14px; */
   background-color: var(--main-blue);
   &:hover {
     background-color: #3893e8;
   }
 }
 
-button.arrow {
+button.transparent {
   width: 54px;
   height: 54px;
-  margin-top: 45px;
   padding: auto;
   background-color: transparent;
   border: 1px solid var(--text-light-grey);
+  &:hover {
+    background-color: var(--text-light-grey);
+  }
 }
 
 img.arrow {
-  width: 14px;
-  height: 16px;
-  margin: 18px;
-  opacity: 0.7;;
+  margin: 6px;
 }
 
 img.logo {
