@@ -68,6 +68,7 @@ h5 {
 
 header a {
   text-decoration: none;
+  color: var(--text-dark-grey);
   &:hover {
     text-decoration: underline;
   }
@@ -94,7 +95,7 @@ body {
   );
   width: 31.7%;
   height: 100%;
-  z-index: -2;
+  z-index: -3;
 }
 
 .content {
@@ -240,5 +241,97 @@ img.tech-support {
   left: calc(50% - 11px);
   width: auto;
   height: 670px;
-  z-index: -1;
+  z-index: -2;
+}
+
+@media all and (width < 1350px) {
+  img.logo {
+    margin-right: auto;
+  }
+  nav {
+    width: max-content;
+    column-gap: 25px;
+  }
+  img.tech-support, .user-layout {
+    opacity: 0.5;
+  }
+}
+
+@media all and (width < 1150px) {
+  header {
+    column-gap: 25px;
+  }
+  img.logo {
+    margin-right: 20px;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.contacts {
+    width: max-content;
+    flex-direction: column;
+    row-gap: 10px;
+    text-wrap: nowrap;
+  }
+}
+
+@media all and (width < 900px) { 
+  * {
+    font-size: 14px;
+  }
+  .user-layout {
+    display: none;
+  }
+}
+
+@media all and (width < 768px) { 
+  body {
+    padding-left: 0;
+  }
+  h1 {
+    line-height: 50px;
+    font-size: 40px;
+  }
+  p.subheader {
+    line-height: 26px;
+    font-size: 18px;
+  }
+  .content {
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  img.logo {
+    margin: 0px 20px;
+  }
+}
+
+@media all and (width < 550px) { 
+  h1 {
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
+
+@media all and (width < 490px) { 
+  header {
+    height: max-content;
+    column-gap: 8px;
+    padding-right: 10px;
+  }
+  .content {
+    height: fit-content;
+    row-gap: 50px;
+  }
+  div.phone {
+    display: none;
+  }
+  button.light-button {
+    transform: rotate(270deg);
+    margin-left: -30px;
+    margin-top: 20px;
+  }
 }

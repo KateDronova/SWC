@@ -4,7 +4,7 @@ div.shadow {
   height: 100%;
   top: 0vh;
   left: 0vh;
-  background-color: black;
+  background-color: #000;
   opacity: 0.6;
   z-index: 3;
 }
